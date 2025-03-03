@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         locationField.innerText = currentCity;
         timeField.innerText = currentTimeandDate;
         conditionField.innerText = weatherCondition;
-        weatherIcon.src = "https:" + iconUrl; // WeatherAPI returns relative URLs, so add "https:"
+        weatherIcon.src = "https:" + iconUrl; 
     }
 
     function formatDateTime(dateTimeString) {
@@ -61,6 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return dateTime.toLocaleString("en-US", { weekday: "long", hour: "numeric", minute: "numeric", hour12: true });
     }
 
-    // Fetch default city's weather on page load
+    
     fetchData(city);
 });
