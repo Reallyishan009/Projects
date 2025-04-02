@@ -1,4 +1,4 @@
-const readline = require('readline');
+import { createInterface } from 'readline';
 
 class Book {
     constructor(bookId, title, author, genre) {
@@ -22,7 +22,7 @@ Availability: ${this.availability ? 'Available' : 'Not Available'}`;
 class LibraryManagementSystem {
     constructor() {
         this.books = new Map();
-        this.rl = readline.createInterface({
+        this.rl = createInterface({
             input: process.stdin,
             output: process.stdout
         });

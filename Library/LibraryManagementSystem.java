@@ -99,7 +99,7 @@ class LibraryManagementSystem {
 
         System.out.print("Enter Author: ");
         String author = scanner.nextLine();
-
+        
         System.out.print("Enter Genre: ");
         String genre = scanner.nextLine();
 
@@ -286,7 +286,7 @@ class LibraryManagementSystem {
         }
     }
 
-    // Main method to run the application
+    // Main method to run the application  
     public static void main(String[] args) {
         LibraryManagementSystem librarySystem = new LibraryManagementSystem();
         librarySystem.displayMenu();
